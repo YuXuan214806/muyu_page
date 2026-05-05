@@ -28,6 +28,9 @@ a { color: inherit; text-decoration: none; }
 a:visited { color: inherit; }
 a:hover { color: inherit; }
 
+button { color: #6B5143; }
+button::-moz-focus-inner { border: 0; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -129,10 +132,10 @@ overflow-x: auto;
 padding: 16px 24px;
 font-size: 0.85rem;
 letter-spacing: 0.12em;
-color: var(–text-secondary) !important;
+color: #6B5143 !important;
 cursor: pointer;
 border: none;
-background: none;
+background: none !important;
 font-family: ‘Noto Sans TC’, sans-serif;
 white-space: nowrap;
 position: relative;
@@ -140,6 +143,16 @@ transition: color 0.3s;
 -webkit-appearance: none;
 appearance: none;
 outline: none;
+-webkit-tap-highlight-color: transparent;
+}
+
+.nav-tab:link, .nav-tab:visited, .nav-tab:hover, .nav-tab:active {
+color: #6B5143 !important;
+text-decoration: none !important;
+}
+
+.nav-tab.active {
+color: #8B4A4A !important;
 }
 
 .nav-tab::after {
@@ -153,7 +166,7 @@ transition: transform 0.3s;
 }
 
 .nav-tab:hover, .nav-tab.active {
-color: var(–rose-brown);
+color: #8B4A4A !important;
 }
 
 .nav-tab.active::after {
