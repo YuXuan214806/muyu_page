@@ -32,10 +32,14 @@ html { scroll-behavior: smooth; }
 
 body {
 font-family: ‘Noto Sans TC’, sans-serif;
-background-color: var(–cream);
+background-color: #F5F0EB !important;
 color: var(–text-main);
 min-height: 100vh;
 overflow-x: hidden;
+}
+
+html {
+background-color: #F5F0EB !important;
 }
 
 /* Background texture */
@@ -125,7 +129,7 @@ overflow-x: auto;
 padding: 16px 24px;
 font-size: 0.85rem;
 letter-spacing: 0.12em;
-color: var(–text-secondary);
+color: var(–text-secondary) !important;
 cursor: pointer;
 border: none;
 background: none;
@@ -133,6 +137,9 @@ font-family: ‘Noto Sans TC’, sans-serif;
 white-space: nowrap;
 position: relative;
 transition: color 0.3s;
+-webkit-appearance: none;
+appearance: none;
+outline: none;
 }
 
 .nav-tab::after {
